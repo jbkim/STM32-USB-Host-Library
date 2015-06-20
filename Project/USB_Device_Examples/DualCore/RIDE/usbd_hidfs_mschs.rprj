@@ -1,0 +1,4 @@
+
+<Project Header="Project 'usbd_hidfs_mschs'" Path=".\usbd_hidfs_mschs.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="usbd_hidfs_mschs" >
+	<ApplicationBuild Header="usbd_hidfs_mschs" Extern=".\usbd_hidfs_mschs.rapp" Path=".\usbd_hidfs_mschs.rapp" OutputFile=".\STM324xG-EVAL\usbd_hidfs_mschs.elf" Config="STM324xG-EVAL_USBD-HS_FS" sate="96" />
+</Project>

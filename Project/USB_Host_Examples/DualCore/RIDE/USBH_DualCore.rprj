@@ -1,0 +1,4 @@
+
+<Project Header="Project 'USBH_DualCore'" Path=".\USBH_DualCore.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="USBH_DualCore" >
+	<ApplicationBuild Header="USBH_DualCore" Extern=".\USBH_DualCore.rapp" Path=".\USBH_DualCore.rapp" OutputFile="STM324xG-EVAL\USBH_DualCore.elf" Config="STM324xG-EVAL_USBH-HS" sate="98" >									</ApplicationBuild>
+</Project>

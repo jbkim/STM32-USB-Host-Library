@@ -1,0 +1,4 @@
+
+<Project Header="Project 'USB_Host_device'" Path=".\USB_Host_device.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="USB_Host_device" >
+	<ApplicationBuild Header="USB_Host_device" Extern=".\USB_Host_device.rapp" Path=".\USB_Host_device.rapp" OutputFile="STM3240_41_G_EVAL\USB_Host_device.elf" Config="STM324xG-EVAL_USBD-HS" sate="98" >								</ApplicationBuild>
+</Project>

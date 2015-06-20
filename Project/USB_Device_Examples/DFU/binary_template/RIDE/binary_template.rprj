@@ -1,0 +1,4 @@
+
+<Project Header="Project 'binary_template'" Path=".\binary_template.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="binary_template" >
+	<ApplicationBuild Header="binary_template" Extern=".\binary_template.rapp" Path=".\binary_template.rapp" OutputFile="STM324xG-EVAL\binary_template.elf" Config="STM324xG_EVAL" sate="98" />
+</Project>

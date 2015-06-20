@@ -1,0 +1,4 @@
+
+<Project Header="Project 'usbd_hid'" Path=".\usbd_hid.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="usbd_hid" >
+	<ApplicationBuild Header="usbd_hid" Extern=".\usbd_hid.rapp" Path=".\usbd_hid.rapp" OutputFile=".\STM324xG-EVAL\usbd_hid.elf" Config="STM324xG-EVAL_USBD-HS" sate="98" />
+</Project>

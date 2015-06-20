@@ -1,0 +1,677 @@
+
+<ApplicationBuild Header="usbd_hid" Extern=".\usbd_hid.rapp" Path=".\usbd_hid.rapp" OutputFile=".\STM324xG-EVAL\usbd_hid.elf" Config="STM324xG-EVAL_USBD-HS" sate="98" >
+	<Group Header="App" Marker="-1" OutputFile="" sate="0" >
+		<NodeC Path="..\src\app.c" Header="app.c" Marker="-1" OutputFile=".\STM324xG-EVAL\app.o" sate="0" />
+		<NodeC Path="..\src\stm32fxxx_it.c" Header="stm32fxxx_it.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32fxxx_it.o" sate="0" />
+		<NodeC Path="..\src\usb_bsp.c" Header="usb_bsp.c" Marker="-1" OutputFile=".\STM324xG-EVAL\usb_bsp.o" sate="0" />
+		<NodeC Path="..\src\usbd_usr.c" Header="usbd_usr.c" Marker="-1" OutputFile=".\STM324xG-EVAL\usbd_usr.o" sate="0" />
+		<NodeC Path="..\src\usbd_desc.c" Header="usbd_desc.c" Marker="-1" OutputFile=".\STM324xG-EVAL\usbd_desc.o" sate="0" />
+																																																																																																																																																																																										
+	</Group>
+	<Group Header="USB Device" Marker="-1" OutputFile="" sate="0" >
+		<Group Header="Class" Marker="-1" OutputFile="" sate="0" >
+			<Group Header="HID" Marker="-1" OutputFile="" sate="96" >
+				<NodeC Path="..\..\..\..\Libraries\STM32_USB_Device_Library\Class\hid\src\usbd_hid_core.c" Header="usbd_hid_core.c" Marker="-1" OutputFile=".\STM324xG-EVAL\usbd_hid_core.o" sate="0" />
+																																																																																				
+			</Group>
+																																																												
+		</Group>
+		<Group Header="Library" Marker="-1" OutputFile="" sate="0" >
+			<NodeC Path="..\..\..\..\Libraries\STM32_USB_Device_Library\Core\src\usbd_req.c" Header="usbd_req.c" Marker="-1" OutputFile=".\STM324xG-EVAL\usbd_req.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32_USB_Device_Library\Core\src\usbd_core.c" Header="usbd_core.c" Marker="-1" OutputFile=".\STM324xG-EVAL\usbd_core.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32_USB_Device_Library\Core\src\usbd_ioreq.c" Header="usbd_ioreq.c" Marker="-1" OutputFile=".\STM324xG-EVAL\usbd_ioreq.o" sate="0" />
+																																																												
+		</Group>
+																																																																																																																																																																																										
+	</Group>
+	<Configs>
+		<Config Header="STM322xG-EVAL_USBD-FS" />
+		<Config Header="STM322xG-EVAL_USBD-HS" />
+		<Config Header="STM3210C-EVAL_USBD-FS" />
+		<Config Header="STM324xG-EVAL_USBD-FS" />
+		<Config Header="STM324xG-EVAL_USBD-HS" />
+																																																																																																																																																
+	</Configs>
+	<Group Header="STM32_EVAL" Marker="-1" OutputFile="" sate="0" >
+		<NodeC Path="..\..\..\..\Utilities\STM32_EVAL\Common\lcd_log.c" Header="lcd_log.c" Marker="-1" OutputFile=".\STM324xG-EVAL\lcd_log.o" sate="0" />
+																																																																																							
+	</Group>
+	<Group Header="Doc" Marker="-1" OutputFile="" sate="0" >
+		<NodeText Path="..\readme.txt" Header="readme.txt" Marker="-1" OutputFile="" sate="0" />
+																																																																																																																					
+	</Group>
+	<Group Header="USB Driver" Marker="-1" OutputFile="" sate="0" >
+		<NodeC Path="..\..\..\..\Libraries\STM32_USB_OTG_Driver\src\usb_dcd_int.c" Header="usb_dcd_int.c" Marker="-1" OutputFile=".\STM324xG-EVAL\usb_dcd_int.o" sate="0" />
+		<NodeC Path="..\..\..\..\Libraries\STM32_USB_OTG_Driver\src\usb_dcd.c" Header="usb_dcd.c" Marker="-1" OutputFile=".\STM324xG-EVAL\usb_dcd.o" sate="0" />
+		<NodeC Path="..\..\..\..\Libraries\STM32_USB_OTG_Driver\src\usb_core.c" Header="usb_core.c" Marker="-1" OutputFile=".\STM324xG-EVAL\usb_core.o" sate="0" />
+																																				
+	</Group>
+	<Group Header="STM32F2xx" Marker="0" OutputFile="" sate="0" >
+		<NodeASM Path="..\..\..\..\Libraries\CMSIS\Device\ST\STM32F2xx\Source\Templates\gcc_ride7\startup_stm32f2xx.s" Header="startup_stm32f2xx.s" Marker="-1" OutputFile=".\STM324xG-EVAL\startup_stm32f2xx.o" sate="0" />
+		<NodeC Path="..\src\system_stm32f2xx.c" Header="system_stm32f2xx.c" Marker="-1" OutputFile=".\STM324xG-EVAL\system_stm32f2xx.o" sate="0" >
+			<Options>
+				<Config Header="STM3210C-EVAL_USBD-FS" >
+					<Set Header="NodeC" >
+						<Section Header="Build" >
+							<Property Header="Exclude" Value="Yes" Removable="1" />
+							<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																																											
+						</Section>
+																																																																																																																					
+					</Set>
+																																																																																										
+				</Config>
+																																																																						
+			</Options>
+																																																		
+		</NodeC>
+		<Group Header="STM32F2xx_StdPeriph_Driver" Marker="-1" OutputFile="" sate="0" >
+			<NodeC Path="..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_usart.c" Header="stm32f2xx_usart.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f2xx_usart.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\src\misc.c" Header="misc.c" Marker="-1" OutputFile=".\STM324xG-EVAL\misc.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dma.c" Header="stm32f2xx_dma.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f2xx_dma.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_exti.c" Header="stm32f2xx_exti.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f2xx_exti.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_flash.c" Header="stm32f2xx_flash.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f2xx_flash.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_fsmc.c" Header="stm32f2xx_fsmc.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f2xx_fsmc.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_gpio.c" Header="stm32f2xx_gpio.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f2xx_gpio.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_i2c.c" Header="stm32f2xx_i2c.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f2xx_i2c.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_pwr.c" Header="stm32f2xx_pwr.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f2xx_pwr.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_rcc.c" Header="stm32f2xx_rcc.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f2xx_rcc.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_sdio.c" Header="stm32f2xx_sdio.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f2xx_sdio.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_spi.c" Header="stm32f2xx_spi.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f2xx_spi.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_syscfg.c" Header="stm32f2xx_syscfg.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f2xx_syscfg.o" sate="0" />
+			<Options>
+				<Config Header="STM3210C-EVAL_USBD-FS" >
+					<Set Header="Group" >
+						<Section Header="Build" >
+							<Property Header="Exclude" Value="Yes" Removable="1" />
+							<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																															
+						</Section>
+																																																																																																									
+					</Set>
+																																																																															
+				</Config>
+																																																	
+			</Options>
+																																																						
+		</Group>
+		<Options>
+			<Config Header="STM3210C-EVAL_USBD-FS" >
+				<Set Header="Group" >
+					<Section Header="Build" >
+						<Property Header="Exclude" Value="Yes" Removable="1" />
+						<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																				
+					</Section>
+																																										
+				</Set>
+																												
+			</Config>
+			<Config Header="STM324xG-EVAL_USBD-FS" >
+				<Set Header="Group" >
+					<Section Header="Build" >
+						<Property Header="Exclude" Value="Yes" Removable="1" />
+						<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																				
+					</Section>
+																																										
+				</Set>
+																												
+			</Config>
+			<Config Header="STM324xG-EVAL_USBD-HS" >
+				<Set Header="Group" >
+					<Section Header="Build" >
+						<Property Header="Exclude" Value="Yes" Removable="1" />
+						<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																				
+					</Section>
+																																										
+				</Set>
+																												
+			</Config>
+																				
+		</Options>
+		<Group Header="STM322xG_EVAL" Marker="-1" OutputFile="" sate="0" >
+			<NodeC Path="..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval.c" Header="stm322xg_eval.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm322xg_eval.o" sate="0" />
+			<NodeC Path="..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval_lcd.c" Header="stm322xg_eval_lcd.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm322xg_eval_lcd.o" sate="0" >
+				<Options>
+					<Config Header="STM3210C-EVAL_USBD-FS" >
+						<Set Header="NodeC" >
+							<Section Header="Build" >
+								<Property Header="Exclude" Value="Yes" Removable="1" />
+								<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																																												
+							</Section>
+																																																																																																																						
+						</Set>
+																																																																																											
+					</Config>
+																																																																							
+				</Options>
+																																																			
+			</NodeC>
+			<NodeC Path="..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval_ioe.c" Header="stm322xg_eval_ioe.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm322xg_eval_ioe.o" sate="0" >
+				<Options>
+					<Config Header="STM3210C-EVAL_USBD-FS" >
+						<Set Header="NodeC" >
+							<Section Header="Build" >
+								<Property Header="Exclude" Value="Yes" Removable="1" />
+								<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																																												
+							</Section>
+																																																																																																																						
+						</Set>
+																																																																																											
+					</Config>
+																																																																							
+				</Options>
+																																																			
+			</NodeC>
+		</Group>
+												
+	</Group>
+	<Group Header="STM32F10x" Marker="0" OutputFile="" sate="0" >
+		<NodeASM Path="..\..\..\..\Libraries\CMSIS\Device\ST\STM32F10x\Source\Templates\gcc_ride7\startup_stm32f10x_cl.s" Header="startup_stm32f10x_cl.s" Marker="-1" OutputFile=".\STM324xG-EVAL\startup_stm32f10x_cl.o" sate="0" />
+		<NodeC Path="..\src\system_stm32f10x.c" Header="system_stm32f10x.c" Marker="-1" OutputFile=".\STM324xG-EVAL\system_stm32f10x.o" sate="0" >
+			<Options>
+				<Config Header="STM322xG-EVAL_USBD-FS" >
+					<Set Header="NodeC" >
+						<Section Header="Build" >
+							<Property Header="Exclude" Value="Yes" Removable="1" />
+							<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																																																																					
+						</Section>
+																																																																																																																																											
+					</Set>
+																																																																																																												
+				</Config>
+																																																															
+			</Options>
+																																																												
+		</NodeC>
+		<Group Header="STM32F10x_StdPeriph_Driver" Marker="-1" OutputFile="" sate="0" >
+			<NodeC Path="..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Header="stm32f10x_usart.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f10x_usart.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Header="misc.c" Marker="-1" OutputFile=".\STM324xG-EVAL\misc.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c" Header="stm32f10x_dma.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f10x_dma.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Header="stm32f10x_exti.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f10x_exti.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" Header="stm32f10x_flash.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f10x_flash.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Header="stm32f10x_gpio.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f10x_gpio.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c" Header="stm32f10x_i2c.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f10x_i2c.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c" Header="stm32f10x_pwr.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f10x_pwr.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Header="stm32f10x_rcc.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f10x_rcc.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c" Header="stm32f10x_spi.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f10x_spi.o" sate="0" />
+			<Options>
+				<Config Header="STM322xG-EVAL_USBD-FS" >
+					<Set Header="Group" >
+						<Section Header="Build" >
+							<Property Header="Exclude" Value="Yes" Removable="1" />
+							<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																																																																																						
+						</Section>
+																																																																																																																																																						
+					</Set>
+																																																																																																																		
+				</Config>
+				<Config Header="STM322xG-EVAL_USBD-HS" >
+					<Set Header="Group" >
+						<Section Header="Build" >
+							<Property Header="Exclude" Value="No" Removable="1" />
+							<Property Header="LinkExclude" Value="No" Removable="1" />
+																																																													
+						</Section>
+																																																			
+					</Set>
+																																				
+				</Config>
+																												
+			</Options>
+																																																																																																																														
+		</Group>
+		<Options>
+			<Config Header="STM322xG-EVAL_USBD-HS" >
+				<Set Header="Group" >
+					<Section Header="Build" >
+						<Property Header="Exclude" Value="Yes" Removable="1" />
+						<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																				
+					</Section>
+																																										
+				</Set>
+																												
+			</Config>
+			<Config Header="STM322xG-EVAL_USBD-FS" >
+				<Set Header="Group" >
+					<Section Header="Build" >
+						<Property Header="Exclude" Value="Yes" Removable="1" />
+						<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																				
+					</Section>
+																																										
+				</Set>
+																												
+			</Config>
+			<Config Header="STM324xG-EVAL_USBD-FS" >
+				<Set Header="Group" >
+					<Section Header="Build" >
+						<Property Header="Exclude" Value="Yes" Removable="1" />
+						<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																				
+					</Section>
+																																										
+				</Set>
+																												
+			</Config>
+			<Config Header="STM324xG-EVAL_USBD-HS" >
+				<Set Header="Group" >
+					<Section Header="Build" >
+						<Property Header="Exclude" Value="Yes" Removable="1" />
+						<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																				
+					</Section>
+																																										
+				</Set>
+																												
+			</Config>
+																				
+		</Options>
+		<Group Header="STM3210C_EVAL" Marker="-1" OutputFile="" sate="0" >
+			<NodeC Path="..\..\..\..\Utilities\STM32_EVAL\STM3210C_EVAL\stm3210c_eval.c" Header="stm3210c_eval.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm3210c_eval.o" sate="0" />
+			<NodeC Path="..\..\..\..\Utilities\STM32_EVAL\STM3210C_EVAL\stm3210c_eval_ioe.c" Header="stm3210c_eval_ioe.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm3210c_eval_ioe.o" sate="0" >
+				<Options>
+					<Config Header="STM322xG-EVAL_USBD-FS" >
+						<Set Header="NodeC" >
+							<Section Header="Build" >
+								<Property Header="Exclude" Value="Yes" Removable="1" />
+								<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																																												
+							</Section>
+																																																																																																																						
+						</Set>
+																																																																																											
+					</Config>
+																																																																
+				</Options>
+																																																			
+			</NodeC>
+			<NodeC Path="..\..\..\..\Utilities\STM32_EVAL\STM3210C_EVAL\stm3210c_eval_lcd.c" Header="stm3210c_eval_lcd.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm3210c_eval_lcd.o" sate="0" >
+				<Options>
+					<Config Header="STM322xG-EVAL_USBD-FS" >
+						<Set Header="NodeC" >
+							<Section Header="Build" >
+								<Property Header="Exclude" Value="Yes" Removable="1" />
+								<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																																												
+							</Section>
+																																																																																																																						
+						</Set>
+																																																																																											
+					</Config>
+																																																																
+				</Options>
+																																																			
+			</NodeC>
+		</Group>
+												
+	</Group>
+	<Group Header="STM32F4xx" Marker="-1" OutputFile="" sate="0" >
+		<Group Header="STM324xG_EVAL" Marker="-1" OutputFile="" sate="0" >
+			<NodeC Path="..\..\..\..\Utilities\STM32_EVAL\STM3240_41_G_EVAL\stm324xg_eval_ioe.c" Header="stm324xg_eval_ioe.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm324xg_eval_ioe.o" sate="0" />
+			<NodeC Path="..\..\..\..\Utilities\STM32_EVAL\STM3240_41_G_EVAL\stm324xg_eval.c" Header="stm324xg_eval.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm324xg_eval.o" sate="0" />
+			<NodeC Path="..\..\..\..\Utilities\STM32_EVAL\STM3240_41_G_EVAL\stm324xg_eval_lcd.c" Header="stm324xg_eval_lcd.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm324xg_eval_lcd.o" sate="0" />
+		</Group>
+		<Group Header="STM32F4xx_StdPeriph_Driver" Marker="-1" OutputFile="" sate="0" >
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c" Header="misc.c" Marker="-1" OutputFile=".\STM324xG-EVAL\misc.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c" Header="stm32f4xx_dma.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_dma.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c" Header="stm32f4xx_exti.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_exti.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c" Header="stm32f4xx_flash.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_flash.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fsmc.c" Header="stm32f4xx_fsmc.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_fsmc.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c" Header="stm32f4xx_gpio.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_gpio.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c" Header="stm32f4xx_i2c.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_i2c.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_iwdg.c" Header="stm32f4xx_iwdg.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_iwdg.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c" Header="stm32f4xx_pwr.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_pwr.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c" Header="stm32f4xx_rcc.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_rcc.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rng.c" Header="stm32f4xx_rng.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_rng.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sdio.c" Header="stm32f4xx_sdio.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_sdio.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c" Header="stm32f4xx_spi.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_spi.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c" Header="stm32f4xx_syscfg.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_syscfg.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c" Header="stm32f4xx_tim.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_tim.o" sate="0" />
+			<NodeC Path="..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c" Header="stm32f4xx_usart.c" Marker="-1" OutputFile=".\STM324xG-EVAL\stm32f4xx_usart.o" sate="0" />
+																				
+		</Group>
+		<NodeASM Path="..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\gcc_ride7\startup_stm32f4xx.s" Header="startup_stm32f4xx.s" Marker="-1" OutputFile=".\STM324xG-EVAL\startup_stm32f4xx.o" sate="0" />
+		<NodeC Path="..\src\system_stm32f4xx.c" Header="system_stm32f4xx.c" Marker="-1" OutputFile=".\STM324xG-EVAL\system_stm32f4xx.o" sate="0" />
+		<Options>
+			<Config Header="STM322xG-EVAL_USBD-FS" >
+				<Set Header="Group" >
+					<Section Header="Build" >
+						<Property Header="Exclude" Value="Yes" Removable="1" />
+						<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																				
+					</Section>
+																																										
+				</Set>
+																												
+			</Config>
+			<Config Header="STM322xG-EVAL_USBD-HS" >
+				<Set Header="Group" >
+					<Section Header="Build" >
+						<Property Header="Exclude" Value="Yes" Removable="1" />
+						<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																				
+					</Section>
+																																										
+				</Set>
+																												
+			</Config>
+			<Config Header="STM3210C-EVAL_USBD-FS" >
+				<Set Header="Group" >
+					<Section Header="Build" >
+						<Property Header="Exclude" Value="Yes" Removable="1" />
+						<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																				
+					</Section>
+																																										
+				</Set>
+																												
+			</Config>
+																				
+		</Options>
+												
+	</Group>
+	<Options>
+		<Config Header="Standard" >
+			<Set Header="ApplicationBuild" >
+				<Section Header="General" >
+					<Property Header="TargetFamily" Value="ARM" />
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+				</Section>
+				<Section Header="Directories" >
+					<Property Header="OutDir" Value="obj" Removable="1" />
+					<Property Header="ListDir" Value="lst" Removable="1" />
+					<Property Header="IncDir" Value="..\..\..\..\..\FWLib\library\inc;..\..\..\..\library\inc;..\..\include" Removable="1" />
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+				</Section>
+																																																																																																																																																																																																																																																																																																																																																																			
+			</Set>
+			<Set Header="Target" >
+				<Section Header="ProcessorARM" >
+					<Property Header="Processor" Value="STM32F103VBT6" />
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+				</Section>
+				<Section Header="ToolSetARM" >
+					<Property Header="BuildToolSetARM" Value="ARM\\GNU.config" Removable="1" />
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+				</Section>
+				<Section Header="DebugARM" >
+					<Property Header="DebugTool" Value="RLINK_CORTEX" Removable="1" />
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+				</Section>
+																																																																																																																																																																																																																																																																																																																																																																																																																											
+			</Set>
+			<Set Header="LD" >
+				<Section Header="LIB" >
+					<Property Header="UART0PUTC" Value="0" Removable="1" />
+					<Property Header="SMALLP" Value="0" Removable="1" />
+					<Property Header="STLIB" Value="0" Removable="1" />
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+				</Section>
+																																																																																																																																																																																																																																																																																																																																																																																	
+			</Set>
+			<Set Header="AS" >
+				<Section Header="Options" >
+					<Property Header="Debug" Value="" Removable="1" />
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+				</Section>
+																																																																																																																																																																																																																																																																																																																																																																																	
+			</Set>
+			<Set Header="GCC" >
+				<Section Header="OPTIMIZE" >
+					<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+				</Section>
+																																																																																																																																																																																																																																																																																																																																																												
+			</Set>
+																																																																																																																																																																																																																																																					
+		</Config>
+		<Config Header="STM322xG-EVAL_USBD-FS" >
+			<Set Header="ApplicationBuild" >
+				<Section Header="Directories" >
+					<Property Header="IncDir" Value="..;..\inc;..\..\..\..\Libraries\CMSIS\Device\ST\STM32F2xx\Include;..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc;..\..\..\..\Libraries\STM32_USB_OTG_Driver\inc;..\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc;..\..\..\..\Libraries\STM32_USB_Device_Library\Class\hid\inc;..\..\..\..\Utilities\STM32_EVAL;..\..\..\..\Utilities\STM32_EVAL\Common;..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL;..\..\..\..\Libraries\CMSIS\Include" Removable="1" />
+					<Property Header="OutDir" Value="$(ApplicationDir)\STM322xG-EVAL" Removable="1" />
+					<Property Header="ListDir" Value="$(ApplicationDir)\STM322xG-EVAL" Removable="1" />
+																																											
+				</Section>
+																																	
+			</Set>
+			<Set Header="Target" >
+				<Section Header="ProcessorARM" >
+					<Property Header="Processor" Value="STM32F207IG" />
+																																																																																																																			
+				</Section>
+				<Section Header="ToolSetARM" >
+					<Property Header="BuildToolSetARM" Value="ARM\GNU.config" />
+																																																																																																																												
+				</Section>
+																																																																																									
+			</Set>
+			<Set Header="LD" >
+				<Section Header="Scripts" >
+					<Property Header="SCRIPTFILES" Value="Yes" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+					<Property Header="StarterKitLimit" Value="No" Removable="1" />
+																																																																																																																																														
+				</Section>
+				<Section Header="Startup" >
+					<Property Header="DEFAULTSTARTUP" Value="No" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+																																																																																																																																														
+				</Section>
+																																																																																																														
+			</Set>
+			<Set Header="GCC" >
+				<Section Header="Defines" >
+					<Property Header="Defines" Value="USE_STDPERIPH_DRIVER;STM32F2XX;USE_STM322xG_EVAL;USE_USB_OTG_FS" Removable="1" />
+																																																																																																																			
+				</Section>
+				<Section Header="OPTIMIZE" >
+					<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																														
+				</Section>
+																																																																																									
+			</Set>
+																				
+		</Config>
+		<Config Header="STM322xG-EVAL_USBD-HS" >
+			<Set Header="Target" >
+				<Section Header="ToolSetARM" >
+					<Property Header="BuildToolSetARM" Value="ARM\GNU.config" />
+																																																																																																	
+				</Section>
+				<Section Header="ProcessorARM" >
+					<Property Header="Processor" Value="STM32F207IG" />
+																																																																																								
+				</Section>
+																																																																				
+			</Set>
+			<Set Header="ApplicationBuild" >
+				<Section Header="Directories" >
+					<Property Header="IncDir" Value="..;..\inc;..\..\..\..\Libraries\CMSIS\Device\ST\STM32F2xx\Include;..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc;..\..\..\..\Libraries\STM32_USB_OTG_Driver\inc;..\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc;..\..\..\..\Libraries\STM32_USB_Device_Library\Class\hid\inc;..\..\..\..\Utilities\STM32_EVAL;..\..\..\..\Utilities\STM32_EVAL\Common;..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL;..\..\..\..\Libraries\CMSIS\Include" Removable="1" />
+					<Property Header="OutDir" Value="STM322xG-EVAL" Removable="1" />
+					<Property Header="ListDir" Value="STM322xG-EVAL" Removable="1" />
+					<Property Header="LibDir" Value="$(RkitLib)\ARM" Removable="1" />
+																																											
+				</Section>
+																																	
+			</Set>
+			<Set Header="GCC" >
+				<Section Header="Defines" >
+					<Property Header="Defines" Value="USE_STDPERIPH_DRIVER;STM32F2XX;USE_STM322xG_EVAL;USE_USB_OTG_HS;USE_ULPI_PHY" Removable="1" />
+																																																																																								
+				</Section>
+				<Section Header="OPTIMIZE" >
+					<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																				
+				</Section>
+																																								
+			</Set>
+			<Set Header="LD" >
+				<Section Header="Startup" >
+					<Property Header="DEFAULTSTARTUP" Value="No" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+																																																																																																	
+				</Section>
+				<Section Header="Scripts" >
+					<Property Header="SCRIPTFILES" Value="Yes" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+																																																																																																	
+				</Section>
+																																																																											
+			</Set>
+																				
+		</Config>
+		<Config Header="STM3210C-EVAL_USBD-FS" >
+			<Set Header="Target" >
+				<Section Header="ToolSetARM" >
+					<Property Header="BuildToolSetARM" Value="ARM\GNU.config" />
+																																																																																																	
+				</Section>
+				<Section Header="ProcessorARM" >
+					<Property Header="Processor" Value="STM32F107VCT6" />
+																																																																																																	
+				</Section>
+																																																																											
+			</Set>
+			<Set Header="GCC" >
+				<Section Header="Defines" >
+					<Property Header="Defines" Value="USE_STDPERIPH_DRIVER;STM32F10X_CL;USE_STM3210C_EVAL;USE_USB_OTG_FS" Removable="1" />
+																																																																						
+				</Section>
+				<Section Header="OPTIMIZE" >
+					<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																				
+				</Section>
+																																								
+			</Set>
+			<Set Header="ApplicationBuild" >
+				<Section Header="Directories" >
+					<Property Header="OutDir" Value="STM3210C-EVAL" Removable="1" />
+					<Property Header="ListDir" Value="STM3210C-EVAL" Removable="1" />
+					<Property Header="IncDir" Value="..;..\inc;..\..\..\..\Libraries\CMSIS\Device\ST\STM32F10x\Include;..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\..\..\..\Libraries\STM32_USB_OTG_Driver\inc;..\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc;..\..\..\..\Libraries\STM32_USB_Device_Library\Class\hid\inc;..\..\..\..\Utilities\STM32_EVAL;..\..\..\..\Utilities\STM32_EVAL\Common;..\..\..\..\Utilities\STM32_EVAL\STM3210C_EVAL;..\..\..\..\Libraries\CMSIS\Include" Removable="1" />
+																																											
+				</Section>
+																																	
+			</Set>
+			<Set Header="LD" >
+				<Section Header="Startup" >
+					<Property Header="DEFAULTSTARTUP" Value="No" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+																																																																																																	
+				</Section>
+				<Section Header="Scripts" >
+					<Property Header="SCRIPTFILES" Value="Yes" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+																																																																																																	
+				</Section>
+																																																																											
+			</Set>
+																				
+		</Config>
+		<Config Header="STM324xG-EVAL_USBD-FS" >
+			<Set Header="Target" >
+				<Section Header="ToolSetARM" >
+					<Property Header="BuildToolSetARM" Value="ARM\GNU.config" />
+																																											
+				</Section>
+				<Section Header="ProcessorARM" >
+					<Property Header="Processor" Value="STM32F407IG" />
+																																											
+				</Section>
+																																	
+			</Set>
+			<Set Header="ApplicationBuild" >
+				<Section Header="Directories" >
+					<Property Header="OutDir" Value="$(ApplicationDir)\STM324xG-EVAL" Removable="1" />
+					<Property Header="ListDir" Value="$(ApplicationDir)\STM324xG-EVAL" Removable="1" />
+					<Property Header="IncDir" Value="..;..\inc;..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\..\..\..\Libraries\STM32_USB_OTG_Driver\inc;..\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc;..\..\..\..\Libraries\STM32_USB_Device_Library\Class\hid\inc;..\..\..\..\Utilities\STM32_EVAL;..\..\..\..\Utilities\STM32_EVAL\Common;..\..\..\..\Utilities\STM32_EVAL\STM3240_41_G_EVAL;..\..\..\..\Libraries\CMSIS\Include" Removable="1" />
+																																											
+				</Section>
+																																	
+			</Set>
+			<Set Header="GCC" >
+				<Section Header="Defines" >
+					<Property Header="Defines" Value="USE_STDPERIPH_DRIVER;STM32F4XX;USE_STM324xG_EVAL;USE_USB_OTG_FS" Removable="1" />
+																																											
+				</Section>
+				<Section Header="OPTIMIZE" >
+					<Property Header="Optimize" Value="-Os" Removable="1" />
+																																											
+				</Section>
+																																	
+			</Set>
+			<Set Header="LD" >
+				<Section Header="Startup" >
+					<Property Header="DEFAULTSTARTUP" Value="No" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+																																											
+				</Section>
+				<Section Header="Scripts" >
+					<Property Header="SCRIPTFILES" Value="Yes" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+					<Property Header="StarterKitLimit" Value="No" Removable="1" />
+																																											
+				</Section>
+																																	
+			</Set>
+																				
+		</Config>
+		<Config Header="STM324xG-EVAL_USBD-HS" >
+			<Set Header="Target" >
+				<Section Header="ToolSetARM" >
+					<Property Header="BuildToolSetARM" Value="ARM\GNU.config" />
+																																											
+				</Section>
+				<Section Header="ProcessorARM" >
+					<Property Header="Processor" Value="STM32F407IG" />
+																																											
+				</Section>
+																																	
+			</Set>
+			<Set Header="ApplicationBuild" >
+				<Section Header="Directories" >
+					<Property Header="IncDir" Value="..;..\inc;..\..\..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\..\..\..\Libraries\STM32_USB_OTG_Driver\inc;..\..\..\..\Libraries\STM32_USB_Device_Library\Core\inc;..\..\..\..\Libraries\STM32_USB_Device_Library\Class\hid\inc;..\..\..\..\Utilities\STM32_EVAL;..\..\..\..\Utilities\STM32_EVAL\Common;..\..\..\..\Utilities\STM32_EVAL\STM3240_41_G_EVAL;..\..\..\..\Libraries\CMSIS\Include" Removable="1" />
+					<Property Header="OutDir" Value="$(ApplicationDir)\STM324xG-EVAL" Removable="1" />
+					<Property Header="ListDir" Value="$(ApplicationDir)\STM324xG-EVAL" Removable="1" />
+																																											
+				</Section>
+																																	
+			</Set>
+			<Set Header="GCC" >
+				<Section Header="Defines" >
+					<Property Header="Defines" Value="USE_STDPERIPH_DRIVER;STM32F4XX;USE_STM324xG_EVAL;USE_USB_OTG_HS;USE_ULPI_PHY" Removable="1" />
+																																											
+				</Section>
+				<Section Header="OPTIMIZE" >
+					<Property Header="Optimize" Value="-Os" Removable="1" />
+																																											
+				</Section>
+																																	
+			</Set>
+			<Set Header="LD" >
+				<Section Header="Startup" >
+					<Property Header="DEFAULTSTARTUP" Value="No" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+																																											
+				</Section>
+				<Section Header="Scripts" >
+					<Property Header="SCRIPTFILES" Value="Yes" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+					<Property Header="StarterKitLimit" Value="No" Removable="1" />
+																																											
+				</Section>
+																																	
+			</Set>
+																				
+		</Config>
+												
+	</Options>
+</ApplicationBuild>

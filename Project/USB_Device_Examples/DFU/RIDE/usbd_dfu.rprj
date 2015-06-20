@@ -1,0 +1,4 @@
+
+<Project Header="Project 'usbd_dfu'" Path=".\usbd_dfu.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="usbd_dfu" >
+	<ApplicationBuild Header="usbd_dfu" Extern=".\usbd_dfu.rapp" Path=".\usbd_dfu.rapp" OutputFile="STM324xG-EVAL\usbd_dfu.elf" Config="STM324xG-EVAL_USBD-HS" sate="98" />
+</Project>

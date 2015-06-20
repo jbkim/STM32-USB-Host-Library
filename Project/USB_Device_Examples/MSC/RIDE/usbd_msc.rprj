@@ -1,0 +1,4 @@
+
+<Project Header="Project 'usbd_msc'" Path=".\usbd_msc.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="usbd_msc" >
+	<ApplicationBuild Header="usbd_msc" Extern=".\usbd_msc.rapp" Path=".\usbd_msc.rapp" OutputFile="STM324xG-EVAL\usbd_msc.elf" Config="STM324xG-EVAL_USBD-HS" sate="98" />
+</Project>
